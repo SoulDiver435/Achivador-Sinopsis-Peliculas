@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archivo de Sinopsis de Películas - JUSE</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <div id="oscurecedor"></div>
+    <div class="entornoApp">
+      <!-- HEADER -->
+      <header>
+        <h1 id="titleApp">JUSE</h1>
+        <h2>Archivo de Sinopsis de Películas</h2>
+      </header>
+
+      <!-- NAV -->
+      <nav>
+        <div id="buscador">
+          <span>Buscar: </span>
+          <input type="text" id="inputBusca" />
+        </div>
+      </nav>
+
+      <!-- BOTÓN AGREGAR PELICULA -->
+      <button class="btnAddPelicula" id="btnAgregarPelicula">
+        Agregar película
+      </button>
+
+      <!-- CONTENEDOR LISTA PELIS -->
+      <div id="contListaPelis">
+        <h2 class="titleLista">Lista de Películas</h2>
+
+        <div id="listaPeliculas">
+          <div id="headerLista">
+            <div class="headNombre headListStyle">Nombre</div>
+            <div class="headMiniRes headListStyle">Mini Sinopsis</div>
+            <div class="headImg headListStyle">Imagen</div>
+            <div class="headGenre headListStyle">Género</div>
+            <div class="headRating headListStyle">Calificación</div>
+          </div>
+
+          <div
+            class="filaPeli peliculaCard"
+            data-genero="ciencia ficcion"
+            data-rating="9"
+          >
+            <h3 class="nombrePeli filaStyle">Inception</h3>
+            <p class="miniReseña filaStyle">Un ladrón que roba secretos...</p>
+            <div class="imgPeliCont filaStyle">
+              <img
+                src="img/inception_ver12_xlg.jpg"
+                alt="inceptionImg"
+                class="imgPeliElm"
+              />
+            </div>
+            <div class="genero filaStyle">Ciencia Ficción</div>
+            <div class="rating filaStyle">9/10</div>
+          </div>
+
+          <div
+            class="filaPeli peliculaCard"
+            data-genero="ciencia ficcion"
+            data-rating="9"
+          >
+            <h3 class="nombrePeli filaStyle">Blade Runner 2049</h3>
+            <p class="miniReseña filaStyle">
+              Un blade runner descubre un secreto oculto que puede cambiar el
+              curso de la humanidad.
+            </p>
+            <div class="imgPeliCont filaStyle">
+              <img
+                src="img/blade_runner_2049-681477614-large.jpg"
+                alt="inceptionImg filaStyle"
+                class="imgPeliElm filaStyle"
+              />
+            </div>
+            <div class="genero filaStyle">Ciencia Ficción</div>
+            <div class="rating filaStyle">8/10</div>
+          </div>
+        </div>
+      </div>
+      <p class="anotacion">© Archivador de Pelis de Juanma y José</p>
+    </div>
+
+    <!-- VISTA DE DETALLE -->
+    <div id="vistaDetalleCont">
+      <div id="detailMainCont">
+        <div id="detaailImgCont">
+          <img
+            src="./img/blade_runner_2049-681477614-large.jpg"
+            alt=""
+            class="detailImg"
+          />
+        </div>
+
+        <div id="detailResYCara">
+          <div id="detailReseña">
+            <h2 class="reseñaDetailTtl">Sinopsis</h2>
+            <p class="reseñaText">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit
+              illo fuga omnis quas eum vel libero dolorum aspernatur doloremque
+              id, ipsa voluptatem quaerat consequatur sed corporis quasi hic
+              quos ex. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Autem qui porro illo pariatur, impedit corrupti quaerat libero
+              reprehenderit saepe odio commodi ut architecto, incidunt animi
+              iure maiores! Repellat illum repellendus, vel fuga accusantium
+              totam neque itaque voluptate similique inventore dolore libero?
+              Illum soluta ducimus aspernatur, obcaecati id, placeat fugiat
+              debitis ullam temporibus error maxime magni hic reprehenderit
+              pariatur, culpa vitae assumenda dignissimos deserunt commodi
+              delectus vero dolorum quo? Provident debitis est eos quaerat rem
+              eveniet nihil error voluptatum? Repellendus, sequi? Dicta culpa
+              distinctio pariatur veniam recusandae? Suscipit, illum iure cumque
+              dicta, dolor alias aliquam error excepturi omnis enim hic, ullam
+              id. Iusto deleniti dignissimos eaque sint ea. 
+              <br>
+              <br>
+              Fugiat corrupti
+              adipisci nisi aliquid sunt ipsa eveniet vitae dolor quos veritatis
+              veniam cupiditate, quis nostrum? Amet ab, voluptatem adipisci
+              alias consectetur animi repellendus! Obcaecati, adipisci, sint qui
+              maiores quis inventore repudiandae quo tenetur perspiciatis
+              aperiam quasi! Impedit laudantium neque ab, praesentium,
+              aspernatur ducimus porro sint odit et numquam eveniet, saepe
+              nesciunt. Nemo natus ratione commodi deleniti esse unde eaque,
+              repellat cumque quasi atque neque possimus itaque, facere quo est
+              quidem deserunt a perferendis sapiente! Cum velit totam ab
+              possimus modi iusto ipsa! Cum repellat ullam itaque recusandae
+              dolorum alias vero iusto a?
+            </p>
+          </div>
+
+          <div id="caracPelicula">
+            <div class="genreDetailCont detailCont">
+              <h2 class="genreDetailTitle detailTitle">Género</h2>
+              <p class="detailDesc">Ciencia Ficción</p>
+            </div>
+
+            <div class="yearDetailCont detailCont">
+              <h2 class="yearDetailTitle detailTitle">Año de estreno</h2>
+              <p class="detailDesc">2020</p>
+            </div>
+
+            <div class="ratingDetailCont detailCont">
+              <h2 class="ratingDetailTitle detailTitle">Calificación</h2>
+              <p class="detailDesc">2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="btnsDetail">
+        <button class="btnDetail" id="btnVolverDetail">Volver</button>
+        <button class="btnDetail" id="btnEditarDetail">Editar</button>
+        <button class="btnDetail" id="btnEliminarDetail">Eliminar</button>
+      </div>
+    </div>
+
+    <!-- FORMULARIO DE NUEVA PELICULA O EDICIÓN -->
+    <div id="nuevaEditPeliCont">
+      <div>
+        <h2 id="titleEdit">Añadir/Editar Película</h2>
+      </div>
+
+      <div id="columnasEdit">
+        <div class="column1Edit columnEditStyle">
+          <h2>Título</h2>
+          <input type="text" class="inputEditStyle" id="inputTitulo" />
+          <h2>Imagen</h2>
+          <label for="inputUrl" class="labelEditStyle">URL:</label>
+          <input type="text" class="inputEditStyle" id="inputUrl" />
+
+           <label for="imageupload" class="uploadImgbtn">Subir Imagen</label>
+          <input type="file" id="imageupload" accept="image/*" style="display: none;" /> 
+          <div id="contPrevImg">
+            <img src="./img/defaultImgJuse_Mesa de trabajo 1.png" alt="" id="previewImg">
+          </div>
+          
+          <!-- <button class="uploadImgbtn btnDetail">Guardar URL</button> -->
+          <h2>Mini Sinopsis</h2>
+          <textarea name="" class="inputEditStyle inputResena" id="inputMiniresId"></textarea>
+        </div>
+
+        <div class="column2Edit columnEditStyle">
+          <h2>Sinopsis Completa</h2>
+          <textarea name="" class="inputEditStyle inputResena" id="inputResId"></textarea>
+          <h2>Calificación</h2>
+          <input type="text" class="inputEditStyle" id="inputRating" />
+          <h2>Año</h2>
+          <input type="text" class="inputEditStyle" id="inputYear" />
+          <h2>Género</h2>
+          <input type="text" class="inputEditStyle" id="inputGenre" />
+        </div>
+      </div>
+
+      <div id="btnsEdit">
+        <button id="btnAñadirEdit" class="btnDetail">Añadir</button>
+        <button id="btnCancelEdit" class="btnDetail">Cancelar</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="peliculasAñadidas.js"></script>
+  </body>
+</html>
